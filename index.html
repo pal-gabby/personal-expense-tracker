@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Expense Tracker</h1>
+
+    <!-- Sign Up Section -->
+    <div id="sign-up">
+        <h2>Sign Up</h2>
+        <input type="text" id="firstName" placeholder="First Name" required><br>
+        <input type="text" id="lastName" placeholder="Last Name" required><br>
+        <input type="email" id="email" placeholder="Email" required><br>
+        <button onclick="signUp()">Sign Up</button>
+    </div>
+
+    <!-- Login Section -->
+    <div id="login">
+        <h2>Login</h2>
+        <input type="email" id="loginEmail" placeholder="Email" required><br>
+        <button onclick="login()">Login</button>
+    </div>
+
+    <!-- Add Expense Section -->
+    <div id="expense-form" style="display: none;">
+        <h2>Add Expense</h2>
+        <input type="date" id="date" required><br>
+        <input type="text" id="description" placeholder="Description" required><br>
+        <input type="number" id="amount" placeholder="Amount" required><br>
+        <button onclick="addExpense()">Add Expense</button>
+    </div>
+
+    <!-- Expense List Section -->
+    <div id="expense-list" style="display: none;">
+        <h2>Your Expenses</h2>
+        <ul id="expenses"></ul>
+        <button onclick="logout()">Logout</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
